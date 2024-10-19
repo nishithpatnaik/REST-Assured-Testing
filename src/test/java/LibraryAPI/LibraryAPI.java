@@ -40,7 +40,7 @@ public class LibraryAPI {
 		.then()
 			.log().all()
 			.statusCode(200);
-		System.out.println("--------------------------------------------------------------");
+		System.out.println("-------------------------END of NewBook----------------------------------------");
 	}
 	
 	
