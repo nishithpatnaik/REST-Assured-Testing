@@ -14,20 +14,21 @@ public class Test_Cakes {
 		String cake_payload = Payload_Cakes.getCakePayload();
 		//System.out.println(cake_payload);
 		
-		/*
-		 * defaultParser = Parser.JSON;
-		 * 
-		 * POJO_Cake_Root response = given() .contentType("application/json") //
-		 * simulate the JSON content type .body(cake_payload) // pass the JSON string as
-		 * the body .post("/fakeUrl") // fake URL, won't make an actual call
-		 * .as(POJO_Cake_Root.class); // deserialize directly into User POJO
-		 * 
-		 * System.out.println(response.getItems());
-		 */
+		
+		  defaultParser = Parser.JSON;
+		  
+		  POJO_Cake_Root response = given() 
+				  .contentType("ContentType.JSON") //  simulate the JSON content type 
+				  .body(cake_payload) // pass the JSON string as  the body 
+				  .post("/fakeUrl") // fake URL, won't make an actual call
+		  .as(POJO_Cake_Root.class); // deserialize directly into User POJO
+		  
+		  System.out.println(response.getItems());
+		 
 		 
 		
 		
-		  JsonPath jp = new JsonPath(cake_payload); 
+		  /*JsonPath jp = new JsonPath(cake_payload); 
 		  POJO_Cake_Root response =  jp.getObject("", POJO_Cake_Root.class);
 		  System.out.println(response.getItems().getItem().get(0).getName());
 		  System.out.println(response.getItems().getItem().get(0).getPpu());
@@ -43,7 +44,7 @@ public class Test_Cakes {
 		  {
 			  System.out.println(response.getItems().getItem().get(0).getTopping().get(j).getType());
 			  
-		  }
+		  }*/
 		 
 				
 

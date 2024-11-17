@@ -17,7 +17,7 @@ public class SerializeRoot {
 	a.setAccuracy(777);
 	a.setName("Nishith");
 	a.setPhone_number("(+91) 983 893 3937");
-	a.setAddress("8714 beacon tree ln, apt 1");
+	a.setAddress("8714 beacon tree ln, apt 5");
 	List<String> types = new ArrayList<String>();
 	types.add("shoe park");
 	types.add("shop");
